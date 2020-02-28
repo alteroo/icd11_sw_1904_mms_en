@@ -1,6 +1,12 @@
-# epas-docker-dev
+# ICD-11 container with configurable API URL
 
-This is a docker-compose project that provides an icd-11 api instance for use in production.
+This is image extends the World Health Organization's ICD-11 image 
+[whoicd/icd11_sw_1904_mms_en](https://hub.docker.com/r/whoicd/icd11_sw_1904_mms_en)
+
+It introduces an new environment variable which allows a user of the image to set the API endpoint that the 
+included embedded coding tool will 'point' at.
+
+It also includes a docker-compose project that provides an icd-11 api instance for use in production.
 This is specifically used in our Tryton ICD-11 project.
 
 Take a look at https://github.com/alteroo/trytond_health_icd11
@@ -8,7 +14,7 @@ Take a look at https://github.com/alteroo/trytond_health_icd11
 ## Usage
 
 - Make sure you have docker and docker-compose installed.
-- Take a look at icd11.env 
+- In the icd11.env set the API_BASE_URL to a URL on which your API can called.
 
 
 ### Stopping and Starting
