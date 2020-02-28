@@ -1,6 +1,6 @@
 FROM whoicd/icd11_sw_1904_mms_en
 
-ENV APIBASEDURL=http://localhost
+ENV API_BASED_URL=http://localhost
 EXPOSE 80
 
 COPY bin/docker-entrypoint.sh /docker-entrypoint-en.sh
