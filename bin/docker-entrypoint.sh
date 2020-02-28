@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "API URL: $APIBASEDURL"
-sed -i "s@\"apiBaseUrl\"\:\s\"http\:\/\/localhost\"@\"apiBaseUrl\": \"$APIBASEDURL\"@g"  /usr/share/icd11/codingtool/appsettings.Container.json
+echo "API URL: $API_BASE_URL"
+sed -i "s@\"apiBaseUrl\"\:\s\"http\:\/\/localhost\"@\"apiBaseUrl\": \"$API_BASE_URL\"@g"  /usr/share/icd11/codingtool/appsettings.Container.json
 
 /startICDApps.sh
