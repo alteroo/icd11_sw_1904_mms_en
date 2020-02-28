@@ -2,7 +2,7 @@ version: '3'
 services:
   icd11:
     restart: always
-    image: whoicd/icd11_sw_1904_mms_en
+    image: alteroo/icd11_sw_1904_mms_en
     ports:
      - "7654:80"
     env_file:
