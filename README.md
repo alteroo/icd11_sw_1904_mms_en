@@ -14,8 +14,10 @@ Take a look at https://github.com/alteroo/trytond_health_icd11
 ## Usage
 
 - Make sure you have docker and docker-compose installed.
-- In the icd11.env set the API_BASE_URL to a URL on which your API can called.
-
+- Copy icd11.env.tmpl to icd11.env and set the API_BASE_URL to a URL on which your API can called.
+```
+cp icd11.env.tmpl icd11.env
+```
 
 ### Stopping and Starting
 #### Starting
